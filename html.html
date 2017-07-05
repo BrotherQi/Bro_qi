@@ -1,0 +1,66 @@
+<html>
+<head>
+        <title>你奇哥的网页</title>
+</head>
+<body>
+ <div class="video-wrapper">
+    <video class="bg-video" src="http://www.piedpiper.com/app/themes/pied-piper/dist/images/video-bg.mp4" autoplay loop></video>
+    <style type="text/css">
+    .video-wrapper {
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
+    </style>
+  </div>
+        <p>
+                <h1 align = "center"><b>hello my friend!</b></h1>
+                很细
+                <b>很粗</b><i>很斜</i><del>使用del标签实现的删除效果</del><ins>使用ins标签实现的下划线效果</ins>
+                <br/>
+                <hr/>
+        </p>
+        <div id = "div1">
+                <p> <h1>Here is a test context </h1></p>
+         </div>
+         
+         <a href="http://www.12306.com">12306</a>
+         <a href="http://www.12306.com" target="_blank" title="跳转到http://www.12306.com">http://www.12306.com</a>
+         <a href="http://www.12306.com">
+                <!--img src="http://how2j.cn/example.gif"/-->
+        </a>
+
+         
+        <script src = 'mycode.js'></script><br/><br/>
+
+        <input type = "button" onclick= ' confirm("Are you happy in here ?") ' value = "Confirm test" /><br/><br/>
+        <input type = "button" onclick= ' prompt("What is your full name ?")' value = "Input test"/><br/><br/>
+        <input type = "button" onclick= ' alert("everything is ok ?") ' value = "Alert test"/><br/><br/>
+        <input type = "button" id = "id2" name = "functiontestbutton" value = "functiontestbutton" onclick=  buttonReport(this.id,this.name,this.value) /><br/><br/>
+        <input type = "button" onclick = "location.reload(true)" value = "reflush" /><!--为了使刷新从服务器获取否则省略从缓存获取/-->
+        <input type = "button" onclick = 'location.replace("www.baidu.com")' value = "go baidu" /><br /><br />
+        
+        The current date and time are :<br />
+        <div id = "div2"></div>
+        <script>telltime();</script>
+        <div align="center">
+                <img width="200" height="200" src="image.png"/>
+        </div>
+        <img src="example.gif" alt="这个是一个图片" />
+
+
+        <img src = "image.png" alt = "image" onmouseover = "this.src='image1.png';" onmouseout = "this.src ='image.png';"/><!--用来测试函数mouseover和mouseout的使用-->
+        <!--input type = "button" id = "id2" name = "functiontestbutton" value = "functiontestbutton" onclick=  "alert('Id:'+id+'\n'+'name:'+this.name+'\n'+'vlaue:'+this.value)"" /测试对属性的调用-->
+        <!--<img src = "image.png" alt = "image" onmouseover = "alert('you entered the image!')"/> //onmouseout-->
+        <script>
+                //confirm("Are you happy in here ?")
+                //prompt("What is your full name ?")
+                var myDivContents = document.getElementById("div1").innerHTML;//通过id调取html中的元素
+                document.write(myDivContents);
+                document.getElementById("div1").innerHTML = "<p><h1 align = 'center'>Everything is ok in here</h1></p>";
+                //alert("you've visited"+history.length + "web pages in this browser session");//测试history功能
+        </script>
+       
+</body>
+</html>

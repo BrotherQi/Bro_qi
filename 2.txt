@@ -1,0 +1,3 @@
+hello world
+<_pydev_bundle.pydev_console_utils.StdIn object at 0x0000017784D08710>
+<_pydev_bundle.pydev_console_utils.StdIn object at 0x0000017784D08710>
